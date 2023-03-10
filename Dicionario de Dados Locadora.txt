@@ -1,0 +1,39 @@
+Tabela "clientes":
+
+Nome da tabela: clientes
+Descrição: tabela que armazena informações sobre clientes.
+Campos:
+id_cliente: número que identifica exclusivamente cada cliente na tabela. É a chave primária da tabela.
+nome_cliente: string com o nome completo do cliente.
+email_cliente: string com o endereço de e-mail do cliente.
+telefone_cliente: identifica o número de telefone do cliente.
+endereco_cliente: string com o endereço do cliente.
+
+Tabela "veiculos":
+
+Nome da tabela: veiculos
+Descrição: tabela que armazena informações sobre veículos disponíveis para aluguel.
+Campos:
+id_veiculo: número que identifica exclusivamente cada veículo na tabela. É a chave primária da tabela.
+marca_veiculo: string com a marca do veículo.
+modelo_veiculo: string com o modelo do veículo.
+ano_veiculo: número com o ano de fabricação do veículo.
+tipo_veiculo: string com o tipo de veículo (por exemplo, "carro", "moto" ou "caminhão").
+
+Tabela "tarifas_aluguel":
+
+Nome da tabela: tarifas_aluguel
+Descrição: tabela que armazena informações sobre as tarifas de aluguel para cada tipo de veículo.
+Campos:
+tipo_veiculo: string que identifica exclusivamente cada tipo de veículo para o qual a tarifa é aplicada. É a chave primária da tabela e é uma chave estrangeira da tabela "veiculos".
+valor_diaria: número decimal que representa o valor da diária de aluguel para o tipo de veículo.
+Tabela "alugueis":
+
+Nome da tabela: alugueis
+Descrição: tabela que armazena informações sobre aluguéis de veículos.
+Campos:
+id_aluguel: número que identifica exclusivamente cada aluguel na tabela. É a chave primária da tabela.
+id_cliente: número que identifica exclusivamente o cliente que fez o aluguel. É uma chave estrangeira da tabela "clientes".
+id_veiculo: número que identifica exclusivamente o veículo que foi alugado. É uma chave estrangeira da tabela "veiculos".
+data_inicio: data em que o aluguel foi iniciado.
+data_fim: data em que o aluguel foi encerrado.
