@@ -27,6 +27,7 @@ Descrição: tabela que armazena informações sobre as tarifas de aluguel para 
 Campos:
 tipo_veiculo: string que identifica exclusivamente cada tipo de veículo para o qual a tarifa é aplicada. É a chave primária da tabela e é uma chave estrangeira da tabela "veiculos".
 valor_diaria: número decimal que representa o valor da diária de aluguel para o tipo de veículo.
+
 Tabela "alugueis":
 
 Nome da tabela: alugueis
